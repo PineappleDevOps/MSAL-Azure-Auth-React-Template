@@ -4,12 +4,12 @@ const msalConfig = {
     auth: {
         clientId: "enter_client_id_here",
         authority: "https://login.microsoftonline.com/common",
-        knownAuthorities: [],
-        cloudDiscoveryMetadata: "",
+        // knownAuthorities: [],
+        // cloudDiscoveryMetadata: "",
         redirectUri: "enter_redirect_uri_here",
         postLogoutRedirectUri: "enter_postlogout_uri_here",
         navigateToLoginRequestUrl: true,
-        clientCapabilities: ["CP1"]
+        // clientCapabilities: ["CP1"]
     },
     cache: {
         cacheLocation: "sessionStorage",
@@ -42,3 +42,7 @@ const msalConfig = {
         },
     },
 };  
+
+export const loginRequest = {
+    scopes: ['user.read'],
+};
